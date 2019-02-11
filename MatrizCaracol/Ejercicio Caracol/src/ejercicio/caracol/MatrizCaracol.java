@@ -26,12 +26,9 @@ public class MatrizCaracol {
         for(i=0;i<n;i++){
             for(j=0;j<n;j++){
                 numeros[k]=matriz[i][j];//Se llena el vector
-                System.out.print(numeros[k]+" ");
                 k++;    
             }
-            System.out.println("");
         }
-        System.out.println("");
         k=0;
     }
     public void Lineabien(){//se encarga de leer las filas de izquierda a derecha
