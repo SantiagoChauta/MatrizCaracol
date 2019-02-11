@@ -20,6 +20,7 @@ public class Leer {
     String dir;
     File file = new File("../Ejercicio Caracol/src/Resources/caracol.txt");
     int a=0,b=0;
+    String array=" ";
     String[][] leer;
     Leer()
     {
@@ -46,8 +47,10 @@ public class Leer {
             for (int i = 0; i <= a; i++) {
                 for (int j = 0; j <= a; j++) {
                     leer[i][j] = part[b];
+                    array+=leer[i][j]+" ";
                     b++;
                 }
+                array+="\n";
         }
             MatrizCaracol ca = new MatrizCaracol(a+1,leer);
             ca.CargarMatriz();
@@ -59,6 +62,7 @@ public class Leer {
             i++;
             
         }
+        JOptionPane.showMessageDialog(null,array);
         JOptionPane.showMessageDialog(null,ca.getarray()); 
             
         
